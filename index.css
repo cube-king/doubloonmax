@@ -7,7 +7,14 @@
     align-items: center; /* Center items vertically */
     background-color: #ff6d00;
   }
-  
+ 
+body {
+  margin: 0;
+}
+.container {
+  margin:auto;
+}
+
   .centerbox {
     display: block;
     color: white;
@@ -25,3 +32,19 @@
     color: #ffffff;
     transition: all ease-in-out 0.4s;
   }
+
+.ocean {
+  background-image: url("svg.png");
+  background-size: contain;
+  max-height: 10vw;
+  position: fixed; 
+  bottom:0%;
+  width:100%;
+}
+
+.ship {
+  display: block;
+  margin-left: 500px;
+  max-width: 20%;
+  margin-bottom: 500px;
+}
