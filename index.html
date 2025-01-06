@@ -9,32 +9,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./index.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
             <div class="navbar">
                 <ul class="encbar">
                     <li><a class="centerbox">DoubloonMaxx</a></li>
                 </ul>
             </div>
-            <h1 class="bigawesometitle">DoubloonMaxx</h1>
-            <input type='text' class="nameinput" placeholder="Project Name">
-            <input type='text' class="hrsinput" placeholder="Hours Spent">
-            <input type='text' class="dblsinput" placeholder="Doubloons Gained">
-            <div>
-                <ul class="bloonlist">
+            <div class="mainwrapper">
+                <div class="biglistcontainer">
+                    <div>
+                    <input type='text' class="nameinput" placeholder="Project Name">
+                    <input type='text' class="hrsinput" placeholder="Hours Spent">
+                    <input type='text' class="dblsinput" placeholder="Doubloons Gained">
+                    </div><div>
+                        <ul class="bloonlist">
 
-                </ul>
+                        </ul>
+                    </div>
+                    <button type="button" id="btn">Add</button>
+                    <button type="button" id="deletebutton">Delete Last</button>
+                    <br>
+                    <br>
+                    <input type='text' class="goalinput" placeholder="Goal">
+                </div>
+                <div class="statscontainer">
+                    <p class="totaldbls">Total doubloons (placeholder)</p>
+                    <p class="avgdblsperhr">Average doubloons per hour (placeholder)</p>
+                    <p class="hrsuntilgoal">Hours until goal (placeholder)</p>
+                </div>
             </div>
-            <button type="button" id="btn">Add</button>
-            <button type="button" id="deletebutton">Delete Last</button>
-            <br>
-            <br>
-            <input type='text' class="goalinput" placeholder="Goal">
             <script src="index.js"></script>
             <div class="ocean">
                 <img src="sparrow.png" class="ship">
+                <img src="blahaj.png" class="blahaj">
             </div>
-        </div>
+            <div class="rain-container">
+                <img src="https://highseas.hackclub.com/doubloon.svg" class="rain" alt="DOUBLOONS!">
+                <img src="https://highseas.hackclub.com/doubloon.svg" class="rain" alt="DOUBLOONS!">
+                <img src="https://highseas.hackclub.com/doubloon.svg" class="rain" alt="DOUBLOONS!">
+                <img src="https://highseas.hackclub.com/doubloon.svg" class="rain" alt="DOUBLOONS!!">
+                <!-- Add more images here for more raindrops -->
+            </div>
     </body>
 </html>
