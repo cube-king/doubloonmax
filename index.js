@@ -54,7 +54,7 @@ jQuery(function(){
             }
             $(".totaldbls").text("Total doubloons: "+total.toFixed(2))
             $(".avgdblsperhr").text("Average doubloons per hour: "+average.toFixed(2))
-            $(".hrsuntilgoal").text("Hours until goal: "+(goal/average).toFixed(2))
+            $(".hrsuntilgoal").text("Hours until goal: "+((goal - total)/average).toFixed(2))
         }
     });
 
@@ -73,7 +73,7 @@ jQuery(function(){
         }
         $(".totaldbls").text("Total doubloons: "+total.toFixed(2))
         $(".avgdblsperhr").text("Average doubloons per hour: "+average.toFixed(2))
-        $(".hrsuntilgoal").text("Hours until goal: "+(goal/average).toFixed(2))
+        $(".hrsuntilgoal").text("Hours until goal: "+((goal - total)/average).toFixed(2))
     });
 
     $('.ship').on("click", function () {
