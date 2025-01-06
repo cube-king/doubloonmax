@@ -105,7 +105,7 @@ body {
   display: absolute;
   margin-left: 70vw;
   max-width: 20vw;
-  margin-bottom: 25vh;
+  margin-bottom: 65vh;
   margin-top:0vh;
   transform: translateY(-250px) scaleX(-1);   
   -webkit-transform: scaleX(-1);
@@ -114,7 +114,13 @@ body {
 }
 
 .blahaj {
-  max-width: 100%;
+  display: absolute;
+  max-width: 40vh;
+  margin-bottom: 60vh;
+  margin-left: -50vw;
+  animation: floatspin 7s ease-in-out infinite;
+  animation-direction:alternate;
+  opacity:0;
 }
 
 @keyframes float {
@@ -129,6 +135,21 @@ body {
   }
   75% {
       transform: translateX(-50%) translateY(-255px) rotate(-1deg);
+  }
+}
+
+@keyframes floatspin {
+  0%, 100% {
+      transform: translateX(-51%) translateY(-250px) rotate(0deg) scaleX(-1); /* Default position */
+  }
+  25% { 
+      transform: translateX(-50%) translateY(-255px) rotate(1deg) scaleX(1);
+  }
+  50% {
+      transform: translateX(-49%) translateY(-260px) rotate(0deg) scaleX(-1); /* Move up slightly */
+  }
+  75% {
+      transform: translateX(-50%) translateY(-255px) rotate(-1deg) scaleX(1);
   }
 }
 

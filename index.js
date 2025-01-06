@@ -47,9 +47,11 @@ jQuery(function(){
         }
         if (goal <= total && !(goal).isNaN && !(total).isNan && goal > 0) {
             $('.rain').css('opacity', '1');
+            $('.blahaj').css('opacity', '1');
         }
         else {
             $('.rain').css('opacity', '0');
+            $('.blahaj').css('opacity', '0');
         }
         $(".totaldbls").text("Total doubloons: "+total.toFixed(2))
         $(".avgdblsperhr").text("Average doubloons per hour: "+average.toFixed(2))
@@ -75,9 +77,11 @@ jQuery(function(){
         console.log(total);
         if (goal <= total && !(goal).isNaN && !(total).isNan && goal > 0) {
             $('.rain').css('opacity', '1');
+            $('.blahaj').css('opacity', '1');
         }
         else {
             $('.rain').css('opacity', '0');
+            $('.blahaj').css('opacity', '0');
         }
         $(".totaldbls").text("Total doubloons: "+total.toFixed(2))
         $(".avgdblsperhr").text("Average doubloons per hour: "+average.toFixed(2))
