@@ -5,6 +5,13 @@ p, li, button, input {
   font-style: normal;
 }
 
+button {
+  border:#000000 solid;
+  border-radius: 12px;
+  background-color: #e04c16;
+  color:white;
+}
+
 input::placeholder {
   color: rgb(74, 74, 74);
   font-weight: 440;
