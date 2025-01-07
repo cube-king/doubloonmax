@@ -35,12 +35,13 @@ input::placeholder {
 .biglistcontainer { 
   width: 57.5vw;
   border-radius:20px;
-  border: 2px solid #4c4c4c;
+  border: 6px solid #4c4c4c;
   padding: 20px;
-  background-color:#ffe993;
+  background: linear-gradient(0deg, rgba(243,255,0,1) 0%, rgba(253,187,45,1) 100%);
   overflow-y:scroll;
   -ms-overflow-style: none; 
   scrollbar-width: none;
+  animation: 1.5s fadeInRight;
 }
 
 #stattext {
@@ -54,9 +55,10 @@ input::placeholder {
 .statscontainer {
   width: 37.5vw;
   border-radius:20px;
-  border: 2px solid #4c4c4c;
+  border: 6px solid #4c4c4c;
   padding: 20px;
-  background-color:#ffe993;
+  background: linear-gradient(0deg, rgba(243,255,0,1) 0%, rgba(253,187,45,1) 100%);
+  animation: 1.5s fadeInLeft;
 }
 
 .bigawesometitle {
@@ -89,6 +91,27 @@ body {
   background-color: #e04c16;
   color: #ffffff;
   transition: all ease-in-out 0.4s;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 .ocean {
@@ -160,6 +183,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  padding-left:3vw;
 }
 
 .rain {
@@ -167,7 +191,8 @@ body {
   animation: fall 2s linear infinite;
   opacity: 0;  /* Make raindrops slightly transparent */
   pointer-events: none; /* Prevent raindrops from interfering with clicks */
-  max-width: 200px;
+  max-width: 20vw;
+  max-height: 80vh;
 }
 
 /* Animating the raindrops */
@@ -201,7 +226,7 @@ body {
 
 .rain:nth-child(4) {
   left: 80%;
-  animation-duration: 2.7s;
+  animation-duration: 2.3s;
   animation-delay: 1.5s;
 }
 
