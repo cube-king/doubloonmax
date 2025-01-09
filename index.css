@@ -48,7 +48,7 @@ input::placeholder {
   border-radius:20px;
   border: 6px solid #4c4c4c;
   padding: 20px;
-  background: linear-gradient(0deg, rgba(243,255,0,1) 0%, rgba(253,187,45,1) 100%);
+  background: linear-gradient(0deg, rgba(243,255,0,1) 0%, rgb(253, 180, 22) 100%);
   overflow-y:scroll;
   -ms-overflow-style: none; 
   scrollbar-width: none;
@@ -61,6 +61,7 @@ input::placeholder {
 
 .biglistcontainer::-webkit-scrollbar {
   display: none;
+  text-decoration: none;
 }
   
 .statscontainer {
@@ -68,7 +69,8 @@ input::placeholder {
   border-radius:20px;
   border: 6px solid #4c4c4c;
   padding: 20px;
-  background: linear-gradient(0deg, rgba(243,255,0,1) 0%, rgba(253,187,45,1) 100%);
+  padding-top: 0px;
+  background: linear-gradient(0deg, rgba(243,255,0,1) 0%, rgb(253, 180, 22) 100%);
   animation: 1.5s fadeInLeft;
 }
 
@@ -226,7 +228,7 @@ body {
 .rain:nth-child(2) {
   left: 40%;
   animation-duration: 3s;
-  animation-delay: 1s;
+  animation-delay: 1s; 
 }
 
 .rain:nth-child(3) {
